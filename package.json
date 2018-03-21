@@ -1,14 +1,23 @@
 {
-  "name": "pageTheme",
-  "version": "0.0.1",
+  "name": "webpack-sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
-    "grunt": "^1.0.1",
-    "grunt-autoprefixer": "*",
-    "grunt-contrib-watch": "*",
-    "grunt-sass": "*",
-    "jit-grunt": "^0.10.0"
+    "css-loader": "^0.26.4",
+    "extract-text-webpack-plugin": "^2.0.0-beta.4",
+    "node-sass": "^4.7.2",
+    "sass-loader": "^4.1.1",
+    "url-loader": "^0.6.2",
+    "webpack": "^2.7.0"
   },
   "dependencies": {
-    "grunt-contrib-sass": "^1.0.0"
+    "webpack-sass-loaders": "^1.0.0"
   }
 }

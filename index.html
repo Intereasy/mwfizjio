@@ -5,32 +5,77 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>MWfizjo</title>
 	<link href="css/main.style.css" rel="stylesheet">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/owl.carousel.min.css" rel="stylesheet"><!--slider-->
+		<link href="css/owl.theme.default.css" rel="stylesheet"><!--slider-->
 	<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
 	<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
 <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
 <body>
-	<div id="loader">
+	<div id="loader-display">
 		<div id="loader-img"></div>
 		<div id="cover-loader"></div>
 	</div>
 	<section class="top-bar">
 		<div class="wrapper flex-container">
 			<div id="logo" class="flex-item">
-				<a href=""><img src="img/logo-1.png"><img src="img/logo-2.png"></a>
+				<a href=""><img src="img/top/logo-1.png"><img src="img/top/logo-2.png"></a>
 			</div>
-			<nav class="flex-item nav">
+			<nav class="active-menu-no" class="flex-item nav">
 				<ul>
-					<li><a class="active" href="">Strona Główna</a></li>
+					<li class="active" ><a href="">Strona Główna</a></li>
 					<li><a href="">O mnie</a></li>
 					<li><a href="">Oferta</a></li>
 					<li><a href="">Pierwsza wizyta</a></li>
 					<li><a href="">Kontakt</a></li>
 				</ul>
 			</nav>
+			<a id="tel-envelope" href="mailto:test@test.pl"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+			<a id="tel-desktop" href="tel:514545552"><i class="fa fa-phone" aria-hidden="false"></i></a>
+			<div id="hamburger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
 	</div>
 	</section>
+	<section class="slider">
+			<div class="owl-carousel ">
+			  <div class="slide slide-1 ">
+					<div class="container-slide">
+						<h3 class="left">Medyczny terning <br>Terapeutyczny</h3>
+					</div>
+				</div>
+			  <div class="slide slide-2">
+					<div class="container-slide">
+						<h3 class="left">Wspólpraca <br>z zawodowymi sportowcami</h3>
+					</div>
+				</div>
+			  <div class="slide slide-3">
+					<div class="container-slide">
+						<h3 class="left">Rehabilitacja <br>osób starszych</h3>
+					</div>
+				</div>
+			  <div class="slide slide-4">
+					<div class="container-slide">
+						<h3 class="right">Bóle <br>kręgosłupa</h3>
+					</div>
+				</div>
+	<!--		  <div class="slide slide-5"></div>
+			  <div class="slide slide-6"></div>-->
+			</div>
+	</section>
 	<article></article>
+	<button type="button" class="layout-white">Layout - white</button>
 </body>
-<script src="js/jquery-1.7.2.min.js" type="text/javascript"></script>
+<script src="js/jquery.min.js" type="text/javascript"></script>
 <script src="js/javascript.js" type="text/javascript"></script>
+<!--slider-->
+<script src="js/owl.carousel.min.js"></script>
+<script>
+$(document).ready(function(){
+
+
+});
+          </script>
 </html>
