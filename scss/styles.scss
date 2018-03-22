@@ -293,6 +293,27 @@
   }
 }
 
+article {
+  display: flex;
+  justify-content: space-between;
+  flex: auto;
+  .photo-doctor{
+    width: 550px;
+    img {
+      width: 100%;
+    }
+  }
+  .desctryption-home{
+    align-self: center;
+    min-width: 600px;
+    h2 {
+
+    }
+    p{
+
+    }
+  }
+}
 /*88888888888888888888888888888888888*/
 .wrapper {
   padding: 0 3%;
@@ -485,11 +506,7 @@
     }
   }
 }
-///article
-article {
-//  background: url("https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2016/barcodesshow.jpg");
-  height: 2500px;
-}
+
 .layout-white {
   background: #000;
   color: #fff;
