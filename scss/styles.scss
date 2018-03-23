@@ -3,7 +3,9 @@
 @import './animation.scss';
 
 // default styles
-
+html {
+  font: normal  1rem 'Lato', sans-serif;
+}
 .wrapper {
   max-width: $ds;
   width: 100%;
@@ -279,10 +281,12 @@
           &.left{
             padding-right: 60%;
             text-align: right;
+            transform: rotate(-5deg);
           }
           &.right{
             padding-left: 50%;
             text-align: left;
+            transform: rotate(5deg);
           }
         }
 
@@ -295,22 +299,29 @@
 
 article {
   display: flex;
-  justify-content: space-between;
-  flex: auto;
+  justify-content: center;
+  flex-flow: row wrap-reverse;
+  align-items: center;
   .photo-doctor{
-    width: 550px;
+    align-self: center;
+    width: 100%;
     img {
       width: 100%;
     }
   }
   .desctryption-home{
     align-self: center;
-    min-width: 600px;
+    width: 100%;
     h2 {
-
+      font-family: 'Roboto', sans-serif;
+      font-size: 3rem;
+      margin: 1rem 0;
+      transform: rotate(7.5deg);
     }
     p{
-
+      font-family: 'Lato', sans-serif;
+      font-size: 1rem;
+      line-height: 1.5rem;
     }
   }
 }
@@ -494,6 +505,23 @@ article {
       }
     }
   }
+  article {
+    justify-content: space-between;
+    .photo-doctor{
+      width: 450px;
+      img {
+        width: 100%;
+      }
+    }
+    .desctryption-home{
+      max-width: 450px;
+      h2 {
+      }
+      p{
+
+      }
+    }
+  }
 }
 @media only screen and (min-width: $ds) { //1200px<
   .slider {
@@ -502,6 +530,27 @@ article {
     .owl-carousel{
       .slide {
         width: 100%;
+      }
+    }
+  }
+  article {
+    display: flex;
+    justify-content: space-between;
+    .photo-doctor{
+      align-self: center;
+      width: 550px;
+      img {
+        width: 100%;
+      }
+    }
+    .desctryption-home{
+      align-self: center;
+      max-width: 500px;
+      h2 {
+
+      }
+      p{
+
       }
     }
   }
